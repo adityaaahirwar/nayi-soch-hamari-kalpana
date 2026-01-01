@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Nayi Soch Humari Kalpna Mahila Mandal – NGO Website
 
-# Run and deploy your AI Studio app
+A mission-driven, freelance-built website for **Nayi Soch Humari Kalpna Mahila Mandal**, a women-empowerment NGO based in **Jabalpur, Madhya Pradesh, India**.  
+The platform highlights exhibitions, training programs, and community impact focused on rural and village women.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/drive/1BIQQeit3PYIRgo4WhvCU4J--sENAYcGR
+## ✨ Project Overview
 
-## Run Locally
+- **Purpose:** Women empowerment, skill education, entrepreneurship enablement, MSME awareness, and community welfare
+- **Pages:** Home | About Us | Contact Us
+- **Hosting Ready:** Vercel / Netlify compatible
+- **Form Integration:** Direct form-to-Gmail delivery (via FormSubmit)
+- **Design Style:** Minimal, card-based, spacious, trust-building UI
+- **Color Theme:** Lemon Yellow + Lemon Green Accents with a clean white base
 
-**Prerequisites:**  Node.js
+---
 
+## 🧠 Key Features
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- Partner & supporter logo strip
+- Initiative highlight cards
+- Animated impact counters
+- Dedicated **Events** section
+- Clickable **News & Updates** image gallery (lightbox preview)
+- Testimonials featuring rural Indian women
+- Contact form sending submissions directly to Gmail inbox
+- SEO-friendly metadata + social share previews
+
+---
