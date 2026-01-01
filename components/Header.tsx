@@ -28,7 +28,7 @@ const Header: React.FC = () => {
         <Link to="/" className="flex items-center gap-2">
           <div className="w-10 h-10 flex items-center justify-center">
             <img
-              src="assets/logo/Nayi-Soch-Humari-Kalpna.png"
+              src="/assets/logo/Nayi-Soch-Humari-Kalpna.png"
               alt="Nayi Soch Humari Kalpna Logo"
               className="w-10 h-10 object-contain"
             />
