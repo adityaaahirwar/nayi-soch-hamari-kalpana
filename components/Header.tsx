@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Heart } from 'lucide-react';
@@ -49,15 +48,16 @@ const Header: React.FC = () => {
             <Link
               key={link.path}
               to={link.path}
-              className={`text-sm font-semibold tracking-wide hover:text-lemonGreen transition-colors ${location.pathname === link.path ? 'text-lemonGreen' : 'text-black'
-                }`}
+              className={`text-sm font-semibold tracking-wide hover:text-brandPurple transition-colors ${
+                location.pathname === link.path ? 'text-brandPurple' : 'text-black'
+              }`}
             >
               {link.name}
             </Link>
           ))}
-          <Link
+          <Link 
             to="/contact"
-            className="px-6 py-2.5 bg-lemonGreen text-black font-bold text-sm rounded-full flex items-center gap-2 hover:bg-black hover:text-white transition-all duration-300 lemon-shadow"
+            className="px-6 py-2.5 bg-brandPurple text-white font-bold text-sm rounded-full flex items-center gap-2 hover:bg-black transition-all duration-300 brand-shadow"
           >
             <Heart size={16} fill="currentColor" />
             Support the Mission
@@ -78,15 +78,15 @@ const Header: React.FC = () => {
               key={link.path}
               to={link.path}
               onClick={() => setIsOpen(false)}
-              className="text-2xl font-bold hover:text-lemonGreen"
+              className="text-2xl font-bold hover:text-brandPurple"
             >
               {link.name}
             </Link>
           ))}
-          <Link
+          <Link 
             to="/contact"
             onClick={() => setIsOpen(false)}
-            className="px-8 py-3 bg-lemonGreen text-black font-bold rounded-full lemon-shadow"
+            className="px-8 py-3 bg-brandPurple text-white font-bold rounded-full brand-shadow"
           >
             Support the Mission
           </Link>

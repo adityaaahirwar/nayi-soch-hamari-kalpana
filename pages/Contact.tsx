@@ -8,47 +8,47 @@ const Contact: React.FC = () => {
   const FORM_ENDPOINT = "https://formsubmit.co/dr.kalpanamishra70@gmail.com";
 
   return (
-    <div className="pt-32">
+    <div className="pt-32 bg-white">
       <section className="container mx-auto px-6 mb-24">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
             
             {/* Contact Info */}
             <div className="animate-in fade-in slide-in-from-left duration-700">
-              <h2 className="text-5xl md:text-7xl font-black mb-10 leading-tight">Get in <span className="text-lemonGreen">Touch</span></h2>
+              <h2 className="text-5xl md:text-7xl font-black mb-10 leading-tight text-brandPurple">Get in <span className="text-brandPurple">Touch</span></h2>
               <p className="text-xl text-gray-500 mb-12 max-w-md leading-relaxed">
                 Connect with us to empower more women in Jabalpur and beyond. Reach out to collaborate or support our mission.
               </p>
               
               <div className="space-y-8">
                 <div className="flex items-start gap-6 group">
-                  <div className="w-14 h-14 rounded-2xl bg-lemonGreen/10 flex items-center justify-center text-lemonGreen group-hover:bg-lemonGreen group-hover:text-black transition-colors duration-300">
+                  <div className="w-14 h-14 rounded-2xl bg-brandPurple/5 flex items-center justify-center text-brandPurple group-hover:bg-brandPurple group-hover:text-white transition-colors duration-300">
                     <MapPin size={28} />
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold mb-1">Registered Office</h4>
+                    <h4 className="text-xl font-bold mb-1 text-brandPurple">Registered Office</h4>
                     <p className="text-gray-500">3/5, A BLOCK, PHASE 1, DUTT ARCADE, CIVIL LINE, JABALPUR – 482001, Madhya Pradesh, India</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-6 group">
-                  <div className="w-14 h-14 rounded-2xl bg-lemonGreen/10 flex items-center justify-center text-lemonGreen group-hover:bg-lemonGreen group-hover:text-black transition-colors duration-300">
+                  <div className="w-14 h-14 rounded-2xl bg-brandPurple/5 flex items-center justify-center text-brandPurple group-hover:bg-brandPurple group-hover:text-white transition-colors duration-300">
                     <Phone size={28} />
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold mb-1">Call Us</h4>
-                    <p className="text-gray-500 font-bold text-lg">+91 99070 87675</p>
-                    <p className="text-gray-500 font-bold text-lg">+91 74893 84141</p>
+                    <h4 className="text-xl font-bold mb-1 text-brandPurple">Call Us</h4>
+                    <p className="text-brandPurple font-bold text-lg">+91 99070 87675</p>
+                    <p className="text-brandPurple font-bold text-lg">+91 74893 84141</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-6 group">
-                  <div className="w-14 h-14 rounded-2xl bg-lemonGreen/10 flex items-center justify-center text-lemonGreen group-hover:bg-lemonGreen group-hover:text-black transition-colors duration-300">
+                  <div className="w-14 h-14 rounded-2xl bg-brandPurple/5 flex items-center justify-center text-brandPurple group-hover:bg-brandPurple group-hover:text-white transition-colors duration-300">
                     <Mail size={28} />
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold mb-1">Email Us</h4>
-                    <p className="text-gray-500 break-all font-medium">dr.kalpanamishra70@gmail.com</p>
+                    <h4 className="text-xl font-bold mb-1 text-brandPurple">Email Us</h4>
+                    <p className="text-brandPurple break-all font-medium">dr.kalpanamishra70@gmail.com</p>
                     <p className="text-xs text-gray-400 mt-1 uppercase tracking-tighter">Official NGO Communication</p>
                   </div>
                 </div>
@@ -68,26 +68,26 @@ const Contact: React.FC = () => {
             </div>
 
             {/* Form */}
-            <div className="bg-gray-50 p-10 md:p-16 rounded-[4rem] border border-gray-100 shadow-xl lg:translate-y-[-20px]">
+            <div className="bg-white p-10 md:p-16 rounded-[4rem] border border-gray-100 brand-shadow lg:translate-y-[-20px]">
               {submitted ? (
                 <div className="h-full flex flex-col items-center justify-center text-center py-12 animate-in fade-in zoom-in duration-500">
-                  <div className="w-24 h-24 bg-lemonGreen rounded-full flex items-center justify-center mb-8 shadow-lg">
-                    <CheckCircle size={48} className="text-black" />
+                  <div className="w-24 h-24 bg-brandPurple rounded-full flex items-center justify-center mb-8 shadow-lg">
+                    <CheckCircle size={48} className="text-white" />
                   </div>
-                  <h3 className="text-3xl font-black mb-4">Message Sent!</h3>
+                  <h3 className="text-3xl font-black mb-4 text-brandPurple">Message Sent!</h3>
                   <p className="text-gray-500 text-lg mb-8">
-                    Thank you for reaching out to Nayi Soch Hamari Kalpna Mahila Mandal. Our team in Jabalpur will get back to you shortly.
+                    Thank you for reaching out to Nayi Soch Humari Kalpna Mahila Mandal. Our team in Jabalpur will get back to you shortly.
                   </p>
                   <button 
                     onClick={() => setSubmitted(false)}
-                    className="text-lemonGreen font-bold border-b-2 border-lemonGreen hover:text-black hover:border-black transition-all"
+                    className="text-brandPurple font-bold border-b-2 border-brandPurple hover:text-black hover:border-black transition-all"
                   >
                     Send another message
                   </button>
                 </div>
               ) : (
                 <>
-                  <h3 className="text-3xl font-black mb-8">Inquiry Form</h3>
+                  <h3 className="text-3xl font-black mb-8 text-brandPurple">Inquiry Form</h3>
                   <form 
                     action={FORM_ENDPOINT} 
                     method="POST"
@@ -107,7 +107,7 @@ const Contact: React.FC = () => {
                           name="name"
                           required
                           placeholder="Enter your full name"
-                          className="w-full bg-white border border-gray-200 rounded-2xl py-4 px-6 focus:outline-none focus:border-lemonGreen focus:ring-4 focus:ring-lemonGreen/10 transition-all placeholder:text-gray-300"
+                          className="w-full bg-white border border-gray-200 rounded-2xl py-4 px-6 focus:outline-none focus:border-brandPurple focus:ring-4 focus:ring-brandPurple/5 transition-all placeholder:text-gray-300"
                         />
                       </div>
                       <div className="flex flex-col gap-2">
@@ -117,7 +117,7 @@ const Contact: React.FC = () => {
                           name="email"
                           required
                           placeholder="Enter your email address"
-                          className="w-full bg-white border border-gray-200 rounded-2xl py-4 px-6 focus:outline-none focus:border-lemonGreen focus:ring-4 focus:ring-lemonGreen/10 transition-all placeholder:text-gray-300"
+                          className="w-full bg-white border border-gray-200 rounded-2xl py-4 px-6 focus:outline-none focus:border-brandPurple focus:ring-4 focus:ring-brandPurple/5 transition-all placeholder:text-gray-300"
                         />
                       </div>
                     </div>
@@ -129,7 +129,7 @@ const Contact: React.FC = () => {
                         name="phone"
                         required
                         placeholder="Enter your mobile number"
-                        className="w-full bg-white border border-gray-200 rounded-2xl py-4 px-6 focus:outline-none focus:border-lemonGreen focus:ring-4 focus:ring-lemonGreen/10 transition-all placeholder:text-gray-300"
+                        className="w-full bg-white border border-gray-200 rounded-2xl py-4 px-6 focus:outline-none focus:border-brandPurple focus:ring-4 focus:ring-brandPurple/5 transition-all placeholder:text-gray-300"
                       />
                     </div>
 
@@ -140,13 +140,13 @@ const Contact: React.FC = () => {
                         required
                         rows={5}
                         placeholder="Write your message or inquiry here..."
-                        className="w-full bg-white border border-gray-200 rounded-2xl py-4 px-6 focus:outline-none focus:border-lemonGreen focus:ring-4 focus:ring-lemonGreen/10 transition-all placeholder:text-gray-300 resize-none"
+                        className="w-full bg-white border border-gray-200 rounded-2xl py-4 px-6 focus:outline-none focus:border-brandPurple focus:ring-4 focus:ring-brandPurple/5 transition-all placeholder:text-gray-300 resize-none"
                       ></textarea>
                     </div>
 
                     <button 
                       type="submit"
-                      className="w-full py-5 bg-black text-white font-black text-lg rounded-2xl flex items-center justify-center gap-3 hover:bg-lemonGreen hover:text-black hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+                      className="w-full py-5 bg-brandPurple text-white font-black text-lg rounded-2xl flex items-center justify-center gap-3 hover:bg-black hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 brand-shadow"
                     >
                       Submit Details <Send size={20} />
                     </button>
@@ -159,8 +159,8 @@ const Contact: React.FC = () => {
         </div>
       </section>
 
-      {/* Map Updated to Jabalpur Location */}
-      <section className="w-full h-[500px] bg-gray-100 relative group overflow-hidden">
+      {/* Map */}
+      <section className="w-full h-[500px] bg-white relative group overflow-hidden">
         <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-b from-white via-transparent to-transparent h-32" />
         <iframe 
           title="NGO Office Location - Civil Line Jabalpur"
